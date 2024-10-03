@@ -1,0 +1,68 @@
+/* Core Values Section Styling */
+.core-values {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.core-values-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.core-value {
+    flex: 1 1 30%; 
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #0056b3;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.core-value h3 {
+    color: #f9f9f9;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: linear-gradient(to right, #333333, #6699ff, #000000);
+    text-decoration: underline;
+    text-align: center;
+}
+
+.core-value p,
+.core-value li {
+    color: #333333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .core-value {
+        flex: 1 1 45%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .core-value {
+        flex: 1 1 100%; 
+    }
+
+    .core-value h3 {
+        font-size: 1.3em;
+    }
+
+    .core-value p,
+    .core-value li {
+        font-size: 0.9em; 
+    }
+}
+
+@media (max-width: 576px) {
+    .core-value {
+        padding: 15px;
+    }
+}
