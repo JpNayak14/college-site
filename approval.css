@@ -1,0 +1,49 @@
+/* Approvals Section */
+.approvals-section {
+    background-color: #f9f9f9; /* Simple light background */
+    padding: 40px 0;
+    border-radius: 10px; 
+    margin: 20px auto; 
+    max-width: 90%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text for headings */
+}
+
+.approvals-section h2 {
+    color: #333; /* Dark text for headings */
+    text-decoration: none; /* No underline */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+.approvals, .accreditations {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between boxes */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.approval-box, .accreditation-box {
+    background-color: white; /* White background for boxes */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px; /* Fixed width for consistency */
+    transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.approval-box img, .accreditation-box img {
+    width: 100%;
+    max-width: 80px; /* Smaller image size */
+    margin-bottom: 10px;
+}
+
+.approval-box p, .accreditation-box p {
+    font-size: 16px; /* Slightly smaller text size */
+    color: #555; /* Lighter text color */
+    font-weight: 500; /* Slightly lighter font weight */
+}
+
+.approval-box:hover, .accreditation-box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}

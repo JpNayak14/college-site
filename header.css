@@ -1,0 +1,100 @@
+/* Header Styles */
+header {
+    background-color: #e6e6e6;
+    color: rgb(34, 34, 34);
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+header img {
+    height: 50px;
+    width: auto; 
+}
+
+/* Navigation */
+.nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #6699ff;
+    border-radius: 5px;
+}
+
+/* Media Queries for Mobile and Tablets */
+@media screen and (max-width: 768px) {
+   
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the logo size */
+    header img {
+        height: 40px;
+        margin-bottom: 10px; 
+    }
+
+    /* Mobile navigation: vertical display */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px; 
+    }
+
+    nav ul li a {
+        padding: 10px 20px; 
+        font-size: 16px; 
+    }
+}
+
+/* For Smaller Mobile Devices */
+@media screen and (max-width: 550px) {
+  
+    header img {
+        height: 30px;
+        text-align: center;
+    }
+
+    /* Resize font for smaller screens */
+    nav ul li {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    /* Adjust link size and spacing */
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

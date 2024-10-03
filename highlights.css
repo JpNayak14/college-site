@@ -1,0 +1,32 @@
+.highlights {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.highlights .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat h3 {
+    font-size: 3rem;
+    color: #4CAF50;
+}
+
+.stat p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .highlights .container {
+        flex-direction: column;
+    }
+
+    .stat {
+        margin-bottom: 30px;
+    }
+}

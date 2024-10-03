@@ -1,0 +1,93 @@
+/* Footer Section Styles */
+.footer {
+    background-color: #003366;
+    color: white; 
+    padding: 40px 20px; 
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* Individual Section Styles */
+.footer-about, .footer-contact, .footer-links, .footer-reach {
+    flex: 1; 
+    min-width: 250px;
+    margin: 10px; 
+}
+
+/* Heading Styles */
+.footer h3 {
+    font-size: 1.5rem; 
+    margin-bottom: 15px; 
+    border-bottom: 2px solid #f5f5f5; 
+    padding-bottom: 10px; 
+}
+
+/* Paragraph Styles */
+.footer p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    margin-top: 15px; 
+}
+
+.social-icons a {
+    color: white; 
+    margin-right: 15px;
+    font-size: 1.5rem; 
+    transition: color 0.3s; 
+}
+
+.social-icons a:hover {
+    color: #f5f5f5; 
+}
+
+/* Contact Section Icons */
+.footer-contact p i {
+    margin-right: 10px; 
+}
+
+/* Helpful Links Styles */
+.footer-links ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0; 
+}
+
+.footer-links a {
+    color: #f5f5f5; 
+    text-decoration: none; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Reach Us Section Styles */
+.footer-reach iframe {
+    width: 100%; 
+    max-width: 300px; 
+    height: 200px; 
+}
+
+/* Bottom Copyright Section Styles */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 0.9rem; 
+    border-top: 1px solid #f5f5f5; 
+    padding-top: 10px; 
+}

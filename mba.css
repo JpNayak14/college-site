@@ -1,0 +1,203 @@
+/* Base styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header img {
+    max-height: 80px;
+    width: auto;
+}
+
+/* Container image responsiveness */
+.container img {
+    width: 80%;
+    height: 20vh;
+    max-height: 500px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0099CC;
+    flex-wrap: wrap; /* Ensures nav links wrap in smaller screens */
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Faculty section */
+.faculty-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.faculty-section h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 40px;
+}
+
+/* Faculty container layout */
+.faculty-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual faculty card */
+.faculty-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: scale(1.05);
+}
+
+/* Faculty images */
+.faculty-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Faculty name and title */
+.faculty-card h3 {
+    color: #004080;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.faculty-card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Contact section */
+.contact {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact button {
+    padding: 10px;
+    border: none;
+    background-color: #004080;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #003366;
+}
+
+/* Footer section */
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Navigation and Image Styles */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    /* Navigation: Stack vertically */
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Image: Reduce size */
+    .container img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Mobile devices (max-width: 550px) */
+@media (max-width: 550px) {
+    
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    /* Image: Further reduce size */
+    .container img {
+        width: 95%;
+        height: auto;
+        border-radius: 5px;
+    }
+}

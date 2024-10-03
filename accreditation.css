@@ -1,0 +1,83 @@
+/* Approvals Section */
+.approvals-section {
+    background: linear-gradient(to right, #333333, #6699ff, #252525); 
+    padding: 50px 0;
+    margin: 40px auto;
+    max-width: 90%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.approvals-section h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.approvals-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #00aaff;
+    margin: 10px auto 0;
+}
+
+/* Layout for Approval Boxes */
+.approvals, .accreditations {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+/* Individual Approval Box Styling */
+.approval-box, .accreditation-box {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    padding: 20px;
+    border-radius: 15px;
+    width: 180px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect with Scaling and Color Change */
+.approval-box:hover, .accreditation-box:hover {
+    transform: scale(1.05);
+    background: linear-gradient(145deg, #00aaff, #0077cc);
+    box-shadow: 0 10px 20px rgba(0, 170, 255, 0.3);
+}
+
+.approval-box:hover p, .accreditation-box:hover p {
+    color: #ffffff;
+}
+
+.approval-box img, .accreditation-box img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Paragraph Styling */
+.approval-box p, .accreditation-box p {
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Hover Effect for Image */
+.approval-box:hover img, .accreditation-box:hover img {
+    transform: scale(1.1);
+}
