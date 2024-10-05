@@ -45,7 +45,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* Ensure content does not overflow */
+    overflow: hidden; 
 }
 
 .department-card::before {
@@ -100,24 +100,24 @@ body {
     color: #333;
 }
 
-/* Media Queries for Responsiveness */
+/* Responsiveness */
 @media screen and (max-width: 1024px) {
     .departments-container {
-        gap: 1.5rem; /* Slightly reduce the gap between cards */
+        gap: 1.5rem; 
     }
 
     .department-card {
-        width: 48%; /* Slightly smaller width for tablets */
+        width: 48%; 
     }
 }
 
 @media screen and (max-width: 768px) {
     .department-card {
-        width: 100%; /* Make each card take full width on smaller tablets */
+        width: 100%;
     }
 
     .department-card h3 {
-        font-size: 1.6rem; /* Adjust font size for smaller devices */
+        font-size: 1.6rem;
     }
 
     .department-card p {
@@ -127,15 +127,15 @@ body {
 
 @media screen and (max-width: 576px) {
     .departments-section {
-        padding: 1.5rem; /* Reduce padding for smaller devices */
+        padding: 1.5rem;
     }
 
     .departments-section h2 {
-        font-size: 1.8rem; /* Adjust title size */
+        font-size: 1.8rem; 
     }
 
     .department-card {
-        padding: 1rem; /* Reduce padding inside cards */
+        padding: 1rem;
     }
 
     .department-card h3 {
@@ -157,7 +157,7 @@ body {
 
 @media screen and (max-width: 400px) {
     .departments-section h2 {
-        font-size: 1.6rem; /* Further adjust title size for very small screens */
+        font-size: 1.6rem; 
     }
 
     .faculty h3 {
