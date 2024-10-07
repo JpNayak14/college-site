@@ -1,32 +1,83 @@
+/* Highlights Section */
 .highlights {
-    background-color: #f9f9f9;
-    padding: 50px 0;
+    background: linear-gradient(135deg, #2a2a72 0%, #009ffd 100%);
+    padding: 60px 15px;
     text-align: center;
+    color: #fff;
 }
 
-.highlights .container {
+.highlights-container {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 35px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 280px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.stat:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .stat h3 {
-    font-size: 3rem;
-    color: #4CAF50;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #ffb347, #ffcc33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 3s ease-in-out infinite;
 }
 
 .stat p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 10px;
-    color: #666;
+    color: #f0f0f0;
 }
 
-/* Adjustments for smaller screens */
+/* Glow Animation for Text */
+@keyframes glow {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Responsive Design */
+
+/* Tablets and smaller screens */
 @media screen and (max-width: 768px) {
-    .highlights .container {
+    .highlights-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .stat {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+        width: 100%;
+        max-width: 380px;
+    }
+}
+
+/* Mobile devices (portrait) */
+@media screen and (max-width: 480px) {
+    .stat h3 {
+        font-size: 2.4rem;
+    }
+
+    .stat p {
+        font-size: 1.1rem;
     }
 }

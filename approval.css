@@ -1,49 +1,67 @@
 /* Approvals Section */
 .approvals-section {
-    background-color: #f9f9f9; /* Simple light background */
+    background-color: #f9f9f9;
     padding: 40px 0;
-    border-radius: 10px; 
-    margin: 20px auto; 
-    max-width: 90%; 
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center text for headings */
+    text-align: center;
 }
 
 .approvals-section h2 {
-    color: #333; /* Dark text for headings */
-    text-decoration: none; /* No underline */
-    margin-bottom: 20px; /* Space below headings */
+    color: #333;
+    margin-bottom: 20px;
 }
 
+/* mobile and tablet */
 .approvals, .accreditations {
     display: flex;
-    justify-content: center;
-    gap: 30px; /* Space between boxes */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px;
+    overflow-x: auto;  
+    padding: 10px;
+    scroll-snap-type: x mandatory; 
 }
 
 .approval-box, .accreditation-box {
-    background-color: white; /* White background for boxes */
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 150px; /* Fixed width for consistency */
-    transition: transform 0.3s ease; /* Animation on hover */
+    width: 150px; 
+    flex: 0 0 auto; 
+    scroll-snap-align: center; 
+    transition: transform 0.3s ease;
 }
 
 .approval-box img, .accreditation-box img {
     width: 100%;
-    max-width: 80px; /* Smaller image size */
+    max-width: 80px;
     margin-bottom: 10px;
 }
 
 .approval-box p, .accreditation-box p {
-    font-size: 16px; /* Slightly smaller text size */
-    color: #555; /* Lighter text color */
-    font-weight: 500; /* Slightly lighter font weight */
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
 }
 
 .approval-box:hover, .accreditation-box:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05);  
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+    .approvals, .accreditations {
+        justify-content: center;
+        flex-wrap: wrap;  
+    }
+}
+
+@media (max-width: 768px) {
+    .approvals, .accreditations {
+        flex-direction: row;  
+        gap: 15px;
+    }
 }

@@ -1,0 +1,156 @@
+/* Contact Section */
+.contact {
+    background: linear-gradient(135deg, #2b2d42 0%, #3f5efb 50%, #8fd3f4 100%);
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #f0f0f0;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.8s ease-in-out;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3f5efb;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(63, 94, 251, 0.3);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #3f5efb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2b2d42;
+}
+
+/* Animations */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styling */
+
+/* Tablets and small screens */
+@media (max-width: 768px) {
+    .contact {
+        padding: 50px 15px;
+    }
+
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 480px) {
+    .contact {
+        padding: 40px 10px;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    form input, form textarea {
+        padding: 12px;
+    }
+
+    .btn-submit {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Desktops and large screens */
+@media (min-width: 1024px) {
+    .contact {
+        padding: 100px 40px;
+    }
+
+    .contact h2 {
+        font-size: 3.5rem;
+    }
+
+    form {
+        max-width: 600px;
+        padding: 40px;
+    }
+
+    form input, form textarea {
+        padding: 18px;
+        font-size: 1.1rem;
+    }
+
+    .btn-submit {
+        padding: 18px 40px;
+        font-size: 1.1rem;
+    }
+}
+
